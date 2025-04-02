@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background" />
+    <!-- Background Image -->
+    <!-- Unique Id for background image-->
+    <!-- width spans full screen-->
+    <!-- height spans full screen-->
+    <!-- scales image fill -->
+
+    <!-- Content Container: LinearLayout to hold all interacts-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="21dp" />
+    <!-- Container width spans full screen-->
+    <!-- Container height spans full screen-->
+    <!-- Semi-Transparent overlay for better readability-->
+    <!-- Centre the children Horizontally and Vertically-->
+    <!-- Arrange child elements vertically -->
+    <!-- Padding around the container-->
+
+
+    <EditText
+        android:textColorHint="#3BFFD8"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:id="@+id/timeofday"
+        android:layout_width="289dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter time of day"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <Button
+        android:id="@+id/suggestionsbutton"
+        android:layout_width="339dp"
+        android:layout_height="65dp"
+        android:textSize="20dp"
+        android:text="Click here for suggestions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/resetbutton"
+        android:layout_width="340dp"
+        android:layout_height="57dp"
+        android:textSize="20dp"
+        android:text="Click here to reset"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.771" />
+
+    <TextView
+        android:id="@+id/suggestions"
+        android:layout_width="268dp"
+        android:layout_height="102dp"
+        android:textSize="28dp"
+        android:text="TextView"
+        android:textColor="#850B99"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.654" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
